@@ -21,7 +21,7 @@ cd react-trivia-game
 npm install
 ```
 
-> This command will install all the required packages, including ESLint, Cypress, RTL, Jest, CSS, and React.
+> This command will install all the required packages, including ESLint, RTL, and Jest.
 
 ## Usage
 To run the React Trivia Game, use the following command:
