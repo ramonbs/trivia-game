@@ -1,0 +1,121 @@
+.login-container, .settings-container {
+  align-items: center;
+  background-image: url('../../assets/background-login.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+.login-container :is( .login ), .settings-container form {
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  justify-content: center;
+  padding: 48px;
+  width: 30%;
+}
+
+.login > *, .settings > * {
+  padding: 10px;
+  width: 100%;
+}
+
+.login-container .login, .settings-container .settings {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  gap: 12px;
+  max-width: 610px;
+  width: 85%;
+}
+
+.login-container .login input {
+  border: 1px solid #e1e5eb;
+  border-radius: 4px;
+  font-size: 15px;
+  padding: 14px;
+}
+
+.login-container .login button, .settings-container .settings button {
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.75px;
+}
+
+.login-container .login button:disabled, .settings-container .settings button:disabled {
+  cursor: no-drop;
+}
+
+.login-container .login .btn-play {
+  margin: 12px 0 0;
+}
+
+.login-container .login .btn-play, .settings-container .settings .btn-play {
+  background-color: #2fc18c;
+  text-transform: uppercase;
+}
+
+.settings-container .settings .btn-play {
+  margin: 12px 0 0;
+}
+
+.login-container .login .btn-play:disabled {
+  background-color: rgba(47, 193, 140, 0.4);
+}
+
+.settings-container .settings .btn-play:disabled {
+  background-color: rgba(47, 193, 140, 0.4);
+}
+
+.login-container .login .btn-settings {
+  background-color: #35906f;
+  margin: 0;
+}
+
+.settings-container .settings select {
+  background-color: white;
+  border: 1px solid #e1e5eb;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 14px;
+}
+
+.settings-container .settings select:active {
+  border: 2px solid black;
+  padding: 13px;
+}
+
+.settings-container .settings select:focus-visible {
+  border: 2px solid black;
+  outline: none;
+  padding: 13px;
+}
+
+.settings-container .settings h1 {
+  color: #3c1b7a;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 150ms;
+}
+
+@media only screen and ( max-width : 800px ) {
+
+  .settings-container .settings h1 {
+    font-size: 2.1rem;
+  }
+}

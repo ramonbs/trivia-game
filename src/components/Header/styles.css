@@ -1,0 +1,67 @@
+.header {
+  align-items: center;
+  background-color: white;
+  display: grid;
+  font-size: 16px;
+  grid-template-columns: 1fr 1fr;
+  height: 110px;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.header .wrapper {
+  align-items: center;
+  display: flex;
+  grid-column: 2;
+  justify-content: space-evenly;
+}
+
+.header .header-user, .header .header-score {
+  align-items: center;
+  display: flex;
+  gap: 14px;
+}
+
+.header .header-user img, .header .header-user .avatar {
+  border-radius: 8px;
+  height: 38px;
+  width: 38px;
+}
+
+.header .header-user .avatar {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.header .header-settings {
+  height: 32px;
+  width: 32px;
+}
+
+.header .header-score .score {
+  font-weight: 600;
+}
+
+@media only screen and ( max-width : 900px ) {
+
+  .header {
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header .wrapper {
+    display:flex;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .score-text {
+    display: none;
+  }
+
+
+}

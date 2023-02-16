@@ -1,0 +1,138 @@
+.game-container {
+  align-items: center;
+  background-image: url('../../assets/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: calc(100vh - 110px);
+  justify-content: center;
+  margin: auto;
+  overflow-y: auto;
+  position: absolute;
+  top: 110px;
+  width: 100%;
+  z-index: 10;
+}
+
+.game-container .loading-message {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  position: absolute;
+  text-transform: uppercase;
+}
+
+.game-container .wrapper {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: space-evenly;
+  margin-top: 140px;
+  position: relative;
+  width: 85%;
+}
+
+.game-container .question-container {
+  align-items: center;
+  background-color: white;
+  border-radius: 18px;
+  display: flex;
+  font-size: 20px;
+  height: 286px;
+  justify-content: center;
+  max-width: 440px;
+  padding: 24px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.game-container .question-container .question-category {
+  align-self: center;
+  background-color: #f9ba18;
+  border-radius: 24px;
+  color: white;
+  display: flex;
+  font-size: 16px;
+  font-weight: 500;
+  justify-content: center;
+  padding: 12px 0;
+  position: absolute;
+  text-transform: uppercase;
+  top: -24px;
+  width: 90%;
+}
+
+.game-container .question-container .timer {
+  align-items: center;
+  bottom: 12px;
+  color: #ea5d5d;
+  display: flex;
+  font-weight: 500;
+  gap: 8px;
+  padding: 14;
+  position: absolute;
+}
+
+.game-container .answers-container {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr;
+  height: fit-content;
+  justify-content: center;
+  width: 440px;
+}
+
+.game-container button {
+  background-color: white;
+  border: 3px solid transparent;
+  border-radius: 8px;
+  color: black;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+
+.game-container .answers-container button:disabled {
+  background-color: rgba(255, 255, 255, 0.6);
+  cursor: no-drop;
+}
+
+.game-container .answers-container .correct-answer.selected {
+  background-color: rgb(6, 240, 15);
+  border: 3px solid rgb(6, 240, 15);
+}
+
+.game-container .answers-container .wrong-answer.selected {
+  background-color: red;
+  border: 3px solid red;
+}
+
+.game-container .answers-container .btn-next {
+  margin: 12px 0 0;
+}
+
+.game-container .score-container {
+  margin: 32px 0 0;
+}
+
+.score-container p {
+  color: #f9ba18;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@media only screen and ( max-width : 900px ) {
+
+  .game-container .answers-container .btn-next {
+    grid-row: 1;
+    margin: 0 0 12px;
+  }
+}
