@@ -29,14 +29,14 @@ To run the React Trivia Game, use the following command:
 npm start
 ```
 
-This will start a development server, which will allow you to view the game in your web browser. By default, the game will be available at http://localhost:3000.
+> This will start a development server, which will allow you to view the game in your web browser. By default, the game will be available at http://localhost:3000.
 
 ## Testing
 To run the tests for the React Trivia Game, use the following command:
 ```
 npm test
 ```
-This will run the Jest test suite, which will test the functionality of the application.
+> This will run the Jest test suite, which will test the functionality of the application.
 
 ## Contributing
 If you would like to contribute to the React Trivia Game, please follow the steps below:
