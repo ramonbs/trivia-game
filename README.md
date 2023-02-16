@@ -8,25 +8,25 @@ To install the React Trivia Game, please follow the steps below:
 
 Clone this repository to your local machine using the following command:
 ```
-- git clone https://github.com/<YOUR_USERNAME>/react-trivia-game.git
+git clone https://github.com/<YOUR_USERNAME>/react-trivia-game.git
 ```
 
 3. Navigate into the project directory:
 ```
-- cd react-trivia-game
+cd react-trivia-game
 ```
 
 4.Install the required dependencies using npm:
 ```
-- npm install
+npm install
 ```
 
-This command will install all the required packages, including ESLint, Cypress, RTL, Jest, CSS, and React.
+> This command will install all the required packages, including ESLint, Cypress, RTL, Jest, CSS, and React.
 
 ## Usage
 To run the React Trivia Game, use the following command:
 ```
-- npm start
+npm start
 ```
 
 This will start a development server, which will allow you to view the game in your web browser. By default, the game will be available at http://localhost:3000.
@@ -34,7 +34,7 @@ This will start a development server, which will allow you to view the game in y
 ## Testing
 To run the tests for the React Trivia Game, use the following command:
 ```
-- npm test
+npm test
 ```
 This will run the Jest test suite, which will test the functionality of the application.
 
