@@ -4,9 +4,9 @@ Welcome to the React Trivia Game! This is a simple trivia game built on React, w
 ## Installation
 To install the Trivia Game, please follow the steps below:
 
-1. Ensure that you have Node.js and npm installed on your computer. If you don't, you can download them from the official Node.js website https://nodejs.org/en/.
+1. Ensure that you have Node.js at version 18 and npm installed on your computer. If you don't, you can download them from the official Node.js website https://nodejs.org/en/. I recommend NVM for the manage of node's version, you can download it from the official nvm repository https://github.com/nvm-sh/nvm.
 
-Clone this repository to your local machine using the following command:
+2. Clone this repository to your local machine using the following command:
 ```
 git clone git@github.com:ramonbs/trivia-game.git
 ```
@@ -16,7 +16,7 @@ git clone git@github.com:ramonbs/trivia-game.git
 cd trivia-game
 ```
 
-4.Install the required dependencies using npm:
+4. Install the required dependencies using npm:
 ```
 npm install
 ```
