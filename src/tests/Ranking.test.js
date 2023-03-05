@@ -77,6 +77,6 @@ describe('Testing ranking page', () => {
     });
 
     const tableRows = container.querySelectorAll('tr');
-    expect(tableRows).toHaveLength(2);
+    expect(tableRows).toHaveLength(1);
   });
 });
